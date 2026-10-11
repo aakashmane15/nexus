@@ -1,0 +1,4 @@
+Sprint 1 Planning Meeting:
+- Saiyam will build the Phaser 2D tilemap and player collision layer.
+- Pranali confirmed the meeting summarisation pipeline will run directly inside the Express backend.
+- Aakash is finalizing the RAG pipeline with pgvector and Gemini embeddings.
