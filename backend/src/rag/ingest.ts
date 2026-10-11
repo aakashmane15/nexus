@@ -28,7 +28,7 @@ export async function ingestFile(
     const vector = await embed(content);
     const literal = `[${vector.join(",")}]`;
 
-    await prisma.$executeRaw`INSERT INTO "Chunk" ("id", "docummentId", "ordinal", "content", "embedding", "createdAt") VALUES (${randomUUID()}, ${doc.id}, ${i}, ${content}, ${literal}::vector, now())`;
+    await prisma.$executeRaw`INSERT INTO "Chunk" ("id", "documentId", "ordinal", "content", "embedding", "createdAt") VALUES (${randomUUID()}, ${doc.id}, ${i}, ${content}, ${literal}::vector, now())`;
 
     process.stdout.write(`Embedding chunk ${i + 1}/${chunks.length}\r`);
   }
