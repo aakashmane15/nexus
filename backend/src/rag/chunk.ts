@@ -1,5 +1,3 @@
-import { createInflateRaw } from "node:zlib";
-
 const DEFAULT_MAX_CHARS = 1200;
 const DEFAULT_OVERLAP = 200;
 
@@ -12,7 +10,7 @@ function hardSplit(text: string, maxChars: number): string[] {
   return out;
 }
 
-export function chunkTest(
+export function chunkText(
   raw: string,
   maxChars = DEFAULT_MAX_CHARS,
   overlap = DEFAULT_OVERLAP,
