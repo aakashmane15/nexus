@@ -1,4 +1,4 @@
 Architecture Decision Record (ADR 01):
 We chose a rule-based heuristic for project health scoring instead of training a machine learning model.
 Reason: On day one, the platform has zero historical project records (cold-start problem).
-Training on synthetic data yields non-verifiable metrics, whereas an explainable heuristic offers transparent signals.
+Training on synthetic data yields non-verifiable metrics, whereas an explainable heuristic offers transparent signals.  
